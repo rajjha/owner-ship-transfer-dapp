@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Life Story</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+
+  <h1 style="color:brown;margin-left:285px;">Manufacturer - Car Registration</h1>
+  <br/>
+
+  <form id="productForm" class="form-horizontal">
+    <b><div id="message" style="color:green;margin-left:285px;font:bold"></div></b><br/>
+    <div class="form-group">
+        <label class="col-xs-3 control-label">VIN: </label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="vin" id="vin" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Model Number: </label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="model_number" id="model_number" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Engine Number: </label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="engine_number" id="engine_number" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Chesis Number: </label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="chesis_number" id="chesis_number" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Color: </label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="color" id="color" />
+        </div>
+    </div>
+
+
+
+
+</br>
+
+
+  </form>
+  <div class="form-group">
+        <div class="col-xs-6 col-xs-offset-3">
+            <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+            <a href="#" onclick="javascript:registerCar()" class="btn btn-primary">Register</a>
+        </div>
+    </div>
+  <br/>
+  <b><div id="car_list" style="color:green;margin-left:285px;font:bold"></div></b><br/>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
